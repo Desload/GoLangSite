@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{template "link" .}}
+   {{template "meta" .}}
+   {{template "title" .}}
+   {{template "scripts_head" .}}
+</head>
+<body>
+{{include "layouts/header"}}
+<div class="core">
+   {{template "content" .}}
+</div>
+
+{{include "layouts/footer"}}
+{{template "scripts_foot" .}}
+</body>
+</html>

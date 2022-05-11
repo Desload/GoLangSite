@@ -2,6 +2,7 @@ package router
 
 import (
 	"FirstSite/routes"
+	"FirstSite/views"
 
 	"github.com/gin-gonic/gin"
 )
@@ -14,6 +15,8 @@ func Router() *gin.Engine {
 
 	routes.NotFound(router)
 	routes.NoMethods(router)
+
+	views.IndexView(router)
 
 	return router
 }
