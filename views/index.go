@@ -1,6 +1,7 @@
 package views
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
 	"time"
@@ -11,6 +12,8 @@ import (
 )
 
 func IndexView(route *gin.Engine) {
+	fmt.Println(route)
+
 	app := ginview.NewMiddleware(goview.Config{
 		Root:      "templates/",
 		Extension: ".html",
